@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png"> <!-- Favicon -->
+</head>
+<body>
+    <!-- Weather Animation Layer -->
+    <div class="weather-animation" id="weather-animation"></div>
+
+    <div class="container">
+        <h1>Weather Forecast</h1>
+
+        <!-- Search Section -->
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- Temperature Unit Toggle -->
+        <div class="unit-toggle">
+            <button id="unit-btn">Show in °F</button>
+        </div>
+
+        <!-- Error Message -->
+        <p id="error-message" class="error"></p>
+
+        <!-- Current Weather Info -->
+        <div class="weather-info" id="weather-info">
+            <h2 id="city-name"></h2>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <p id="description"></p>
+            <p><span id="temperature"></span> °C</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="wind-speed"></span> m/s</p>
+        </div>
+
+        <!-- 5-Day Forecast -->
+        <div class="forecast-container" id="forecast-container">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast-cards" id="forecast-cards"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
